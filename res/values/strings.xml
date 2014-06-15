@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="app_name">Simple Timer</string>
-    <string name="title_activity_main">Simple Timer</string>
+    <string name="app_name">Timer</string>
+    <string name="title_activity_main">Timer</string>
     <string name="np1">1</string>
     <string name="np2">2</string>
     <string name="np3">3</string>
@@ -14,13 +14,13 @@
     <string name="np0">0</string>
     <string name="start">Start</string>
     <string name="stop_clear">Stop/Clear</string>
-    <string name="hour">hour</string>
-    <string name="hours">hours</string>
-    <string name="minute">minute</string>
-    <string name="minutes">minutes</string>
-    <string name="second">second</string>
-    <string name="seconds">seconds</string>
-    <string name="remaining">remaining</string>
+    <string name="hour">Hour</string>
+    <string name="hours">Hours</string>
+    <string name="minute">Minute</string>
+    <string name="minutes">Minutes</string>
+    <string name="second">Second</string>
+    <string name="seconds">Seconds</string>
+    <string name="remaining">Remaining</string>
     <string name="timer">Timer</string>
     <string name="default_time">00:00:00</string>
     <string name="notification_popup_msg">Timer Started</string>
