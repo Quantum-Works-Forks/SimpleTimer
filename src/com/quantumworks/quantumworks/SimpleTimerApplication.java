@@ -1,4 +1,4 @@
-package com.tywholland.simpletimer;
+package com.quantumworks.simple;
 
 import java.io.IOException;
 import java.util.Calendar;
@@ -14,9 +14,9 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.tywholland.simpletimer.timer.TimerUtil;
+import com.quantumworks.simple..Util;
 
-public class SimpleTimerApplication extends Application {
+public class SimpleApplication extends Application {
 
 	private Vibrator mVibrator;
 	private Calendar mCurrentAlarmCalendar;
@@ -37,13 +37,13 @@ public class SimpleTimerApplication extends Application {
 	@Override
 	public void onTerminate() {
 		super.onTerminate();
-		Log.e("SimpleTimer", "onTerminate()");
+		Log.e("Simple", "onTerminate()");
 	}
 	
 	@Override
 	public void onLowMemory() {
 		super.onLowMemory();
-		Log.e("SimpleTimer", "onLowMemory()");
+		Log.e("Simple", "onLowMemory()");
 	}
 	
 	public Calendar getCurrentAlarmCalendar() {
@@ -58,19 +58,19 @@ public class SimpleTimerApplication extends Application {
 		mCurrentAlarmCalendar = cal;
 	}
 
-	public void startTimer(long milliseconds) {
+	public void start(long milliseconds) {
 		mCurrentAlarmCalendar = Calendar.getInstance();
 		mCurrentAlarmCalendar.add(Calendar.SECOND, (int) (milliseconds / 1000));
-		TimerUtil.setAlarm(getApplicationContext(), 0, milliseconds,
+		Util.setAlarm(getApplicationContext(), 0, milliseconds,
 				getNotificationAlarmTitle());
 	}
 
-	public void stopTimer() {
-		TimerUtil.stopTimer(getApplicationContext());
+	public void stop() {
+		Util.stop(getApplicationContext());
 	}
 
 	private String getNotificationAlarmTitle() {
-		return mAlarmName.length() > 0 ? mAlarmName : getString(R.string.timer);
+		return mAlarmName.length() > 0 ? mAlarmName : getString(R.string.);
 	}
 
 	public String getTimeString() {

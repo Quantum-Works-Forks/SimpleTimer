@@ -1,4 +1,4 @@
-package com.tywholland.simpletimer.timer;
+package com.quantumworks.timer.timer;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

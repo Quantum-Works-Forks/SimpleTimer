@@ -1,4 +1,4 @@
-package com.tywholland.simpletimer.timer;
+package com.quantumworks.timer.timer;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -13,8 +13,8 @@ import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 
-import com.tywholland.simpletimer.R;
-import com.tywholland.simpletimer.SimpleTimerApplication;
+import com.quantumworks.timer.R;
+import com.quantumworks.timer.timerApplication;
 
 public class TimerUtil {
 	public static final String MILLISECONDS_LEFT_KEY = "ms_left";
@@ -174,9 +174,9 @@ public class TimerUtil {
 		return pendingIntent;
 	}
 
-	private static SimpleTimerApplication getApplication(
+	private static timerApplication getApplication(
 			Context applicationContext) {
-		return (SimpleTimerApplication) applicationContext;
+		return (timerApplication) applicationContext;
 	}
 
 	private static AlarmManager getAlarmManager(Context applicationContext) {

@@ -1,4 +1,4 @@
-package com.tywholland.simpletimer.timer;
+package com.quantumworks.timer.timer;
 
 import android.util.Log;
 

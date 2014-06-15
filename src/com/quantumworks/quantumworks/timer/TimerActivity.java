@@ -1,4 +1,4 @@
-package com.tywholland.simpletimer.timer;
+package com.quantumworks.timer.timer;
 
 import java.util.Calendar;
 
@@ -17,9 +17,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tywholland.simpletimer.R;
-import com.tywholland.simpletimer.Settings;
-import com.tywholland.simpletimer.SimpleTimerApplication;
+import com.quantumworks.timer.R;
+import com.quantumworks.timer.Settings;
+import com.quantumworks.timer.timerApplication;
 
 public class TimerActivity extends Activity {
 	private static final String ALARM_TIME = "alarmkey";
@@ -40,7 +40,7 @@ public class TimerActivity extends Activity {
 	private Button mStopButton;
 	private TextView mTimeView;
 	private EditText mAlarmNameView;
-	private SimpleTimerApplication mAlarmApplication;
+	private timerApplication mAlarmApplication;
 	private CountDownTimer mCountDownTimer;
 	private boolean mCountingDown;
 
@@ -64,7 +64,7 @@ public class TimerActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mAlarmApplication = (SimpleTimerApplication) getApplicationContext();
+		mAlarmApplication = (timerApplication) getApplicationContext();
 		if (PreferenceManager.getDefaultSharedPreferences(
 				getApplicationContext()).getBoolean(
 				getString(R.string.key_button_placement), true)) {

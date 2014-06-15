@@ -1,9 +1,9 @@
-package com.tywholland.simpletimer;
+package com.quantumworks.timer;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import com.tywholland.simpletimer.R;
+import com.quantumworks.timer.R;
 
 public class Settings extends PreferenceActivity {
 	@SuppressWarnings("deprecation")
